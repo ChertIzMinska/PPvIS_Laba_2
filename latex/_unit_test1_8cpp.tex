@@ -1,0 +1,57 @@
+\hypertarget{_unit_test1_8cpp}{}\doxysection{Unit\+Test1/\+Unit\+Test1.cpp File Reference}
+\label{_unit_test1_8cpp}\index{UnitTest1/UnitTest1.cpp@{UnitTest1/UnitTest1.cpp}}
+
+
+Файл , в котором хранятся тесты,проверяющие правильность написания кода.  
+
+
+{\ttfamily \#include \char`\"{}Cpp\+Unit\+Test.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Header.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{_unit_test1_8cpp_a0ceeca30fc230287afb869e7254b59e9}{func\+\_\+for\+\_\+test}} (\mbox{\hyperlink{classvechile}{vechile}} \&a)
+\begin{DoxyCompactList}\small\item\em Функция для проверки наследования в конкретном классе.\+В ней написаны две функции , которые передаются по наследованию как public для дочерних классов (car,ship,motocycle) Каждая функция \+\_\+start() и \+\_\+finish() возвращает значение, которое чисто указывает номер дочернего класса для \mbox{\hyperlink{classcar}{car(1)}} \mbox{\hyperlink{classship}{ship(2)}} и т.\+д. и т.\+п. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{_unit_test1_8cpp_a72947bdb044a2f5ee054fe1c31e79255}{Unit\+Test1\+::\+T\+E\+S\+T\+\_\+\+C\+L\+A\+SS}} (Unit\+Test1)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Файл , в котором хранятся тесты,проверяющие правильность написания кода. 
+
+Суть тестов заключается в том , чтобы проверить правильно ли выполняется наследование для дочерних классов vechile. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{_unit_test1_8cpp_a0ceeca30fc230287afb869e7254b59e9}\label{_unit_test1_8cpp_a0ceeca30fc230287afb869e7254b59e9}} 
+\index{UnitTest1.cpp@{UnitTest1.cpp}!func\_for\_test@{func\_for\_test}}
+\index{func\_for\_test@{func\_for\_test}!UnitTest1.cpp@{UnitTest1.cpp}}
+\doxysubsubsection{\texorpdfstring{func\_for\_test()}{func\_for\_test()}}
+{\footnotesize\ttfamily int func\+\_\+for\+\_\+test (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvechile}{vechile}} \&}]{a }\end{DoxyParamCaption})}
+
+
+
+Функция для проверки наследования в конкретном классе.\+В ней написаны две функции , которые передаются по наследованию как public для дочерних классов (car,ship,motocycle) Каждая функция \+\_\+start() и \+\_\+finish() возвращает значение, которое чисто указывает номер дочернего класса для \mbox{\hyperlink{classcar}{car(1)}} \mbox{\hyperlink{classship}{ship(2)}} и т.\+д. и т.\+п. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & параметр а -\/это у нас объект нашего виртуального класса , но который будет по сути любым дочерним классом кроме самого объекта класса vechile\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Возвращает сумму номеров наших этих классов умноженных на 2. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_unit_test1_8cpp_a72947bdb044a2f5ee054fe1c31e79255}\label{_unit_test1_8cpp_a72947bdb044a2f5ee054fe1c31e79255}} 
+\index{UnitTest1.cpp@{UnitTest1.cpp}!TEST\_CLASS@{TEST\_CLASS}}
+\index{TEST\_CLASS@{TEST\_CLASS}!UnitTest1.cpp@{UnitTest1.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CLASS()}{TEST\_CLASS()}}
+{\footnotesize\ttfamily Unit\+Test1\+::\+T\+E\+S\+T\+\_\+\+C\+L\+A\+SS (\begin{DoxyParamCaption}\item[{Unit\+Test1}]{ }\end{DoxyParamCaption})}
+
+Test1.  Test1 проверяет на правильно ли наследуются функции от class vechile для class car.\+Если все наследуется правильно , то в итоге у нас возращается 2. 
+
+Test2.  Test2 проверяет на правильно ли наследуются функции от class vechile для class ship.\+Если все наследуется правильно , то в итоге у нас возращается 4. 
+
+Test3.  В Test3 мы проверяем правильно ли все наследуется через public функцию \+\_\+fly . Так как у нас private наследование ,мы не можем исползьвать функцию ,которая использовалась в Test1 и Test2. 
+
+Test4.  Test4 проверяет на правильно ли наследуются функции от class vechile для class ship.\+Если все наследуется правильно , то в итоге у нас возращается 8. 
+
+Test5.  В Test5 так как class motocycle наследует функцию \+\_\+start() и \+\_\+finish() от class car , то в резуельтате у нас должно вернуться 2. 

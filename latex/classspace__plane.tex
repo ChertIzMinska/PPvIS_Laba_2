@@ -1,0 +1,88 @@
+\hypertarget{classspace__plane}{}\doxysection{space\+\_\+plane Class Reference}
+\label{classspace__plane}\index{space\_plane@{space\_plane}}
+
+
+Дочерний класс \mbox{\hyperlink{classspace__plane}{space\+\_\+plane}}.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+Inheritance diagram for space\+\_\+plane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classspace__plane}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classspace__plane_a56fe4919a5fc7ad98bddb1d896da0170}{\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Функция отвечает за запуск космического корабля(за его готовность к полету). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classspace__plane_a71747bf5ffa695bc6081810b7f69bf95}{\+\_\+detach\+\_\+the\+\_\+first\+\_\+part}} ()
+\begin{DoxyCompactList}\small\item\em Функция отвечает за отсоединение нижней части корабля, когда корабль вышел за атмосферу. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classspace__plane_a8a29e0134aaece52a8f3efb99a866485}{\+\_\+finish}} ()
+\begin{DoxyCompactList}\small\item\em Функция \+\_\+start,которая отвечает за конец движения .Например\+:выключение двигателя(турбин), опущение якоря. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classspace__plane_ae5d430cac4c76199c27f298bd86789a0}\label{classspace__plane_ae5d430cac4c76199c27f298bd86789a0}} 
+{\bfseries space\+\_\+plane} (int max\+\_\+speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Дочерний класс \mbox{\hyperlink{classspace__plane}{space\+\_\+plane}}. 
+
+Данный класс является результатом множественного наследования от класса vechile public наследованием и от класса airplane protected наследованием. Множественное наследование нужно тут ,так как данному классу нужны методы как от класса vechile ,так и от класса airplane , однако методы от класса airplane не должны быть в public. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classspace__plane_a71747bf5ffa695bc6081810b7f69bf95}\label{classspace__plane_a71747bf5ffa695bc6081810b7f69bf95}} 
+\index{space\_plane@{space\_plane}!\_detach\_the\_first\_part@{\_detach\_the\_first\_part}}
+\index{\_detach\_the\_first\_part@{\_detach\_the\_first\_part}!space\_plane@{space\_plane}}
+\doxysubsubsection{\texorpdfstring{\_detach\_the\_first\_part()}{\_detach\_the\_first\_part()}}
+{\footnotesize\ttfamily void space\+\_\+plane\+::\+\_\+detach\+\_\+the\+\_\+first\+\_\+part (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция отвечает за отсоединение нижней части корабля, когда корабль вышел за атмосферу. 
+
+\mbox{\Hypertarget{classspace__plane_a8a29e0134aaece52a8f3efb99a866485}\label{classspace__plane_a8a29e0134aaece52a8f3efb99a866485}} 
+\index{space\_plane@{space\_plane}!\_finish@{\_finish}}
+\index{\_finish@{\_finish}!space\_plane@{space\_plane}}
+\doxysubsubsection{\texorpdfstring{\_finish()}{\_finish()}}
+{\footnotesize\ttfamily int space\+\_\+plane\+::\+\_\+finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция \+\_\+start,которая отвечает за конец движения .Например\+:выключение двигателя(турбин), опущение якоря. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает номер дочернего класса. Для car-\/1,ship-\/2,airplane-\/3,space\+\_\+palne-\/4,motocycle-\/1 так как она наследует функцию start и finish от car
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_ad5e919ab1cab97025692cd9b8ee90680}{vechile}}.
+
+\mbox{\Hypertarget{classspace__plane_a56fe4919a5fc7ad98bddb1d896da0170}\label{classspace__plane_a56fe4919a5fc7ad98bddb1d896da0170}} 
+\index{space\_plane@{space\_plane}!\_start@{\_start}}
+\index{\_start@{\_start}!space\_plane@{space\_plane}}
+\doxysubsubsection{\texorpdfstring{\_start()}{\_start()}}
+{\footnotesize\ttfamily int space\+\_\+plane\+::\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция отвечает за запуск космического корабля(за его готовность к полету). 
+
+\begin{DoxyReturn}{Returns}
+возвращает 4
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}{vechile}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_space_plane___functions_8cpp}{Space\+Plane\+\_\+\+Functions.\+cpp}}\end{DoxyCompactItemize}

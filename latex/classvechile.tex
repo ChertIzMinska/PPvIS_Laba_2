@@ -1,0 +1,106 @@
+\hypertarget{classvechile}{}\doxysection{vechile Class Reference}
+\label{classvechile}\index{vechile@{vechile}}
+
+
+Абстрактный класс vechile.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+Inheritance diagram for vechile\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classvechile}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual int \mbox{\hyperlink{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}{\+\_\+start}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \+\_\+start,которая отвечает за начало движения .Например\+:включение двигателя(турбин), поднятие якоря. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classvechile_ad5e919ab1cab97025692cd9b8ee90680}{\+\_\+finish}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \+\_\+start,которая отвечает за конец движения .Например\+:выключение двигателя(турбин), опущение якоря. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classvechile_a6087862dfe0154a33f80cbc209145a88}{\+\_\+move}} ()=0
+\begin{DoxyCompactList}\small\item\em Функция \+\_\+move описывает движение нашего тс т.\+е. что нужно сделать чтобы мы смогли продолжить движение. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvechile_a553c68600a4990653faea97101588def}\label{classvechile_a553c68600a4990653faea97101588def}} 
+int {\bfseries max\+\_\+speed}
+\item 
+\mbox{\Hypertarget{classvechile_ae6c78a29183950dd49ae747d69a23be2}\label{classvechile_ae6c78a29183950dd49ae747d69a23be2}} 
+int {\bfseries speed} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Абстрактный класс vechile. 
+
+Данный класс является предком для всех остальных классов. В нем хранятся\+: 
+\begin{DoxyParams}{Parameters}
+{\em int} & max\+\_\+speed максимальная скорость нашего транспортного средства \\
+\hline
+{\em int} & speed скорость нашего тс в данный момент времени \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvechile_ad5e919ab1cab97025692cd9b8ee90680}\label{classvechile_ad5e919ab1cab97025692cd9b8ee90680}} 
+\index{vechile@{vechile}!\_finish@{\_finish}}
+\index{\_finish@{\_finish}!vechile@{vechile}}
+\doxysubsubsection{\texorpdfstring{\_finish()}{\_finish()}}
+{\footnotesize\ttfamily virtual int vechile\+::\+\_\+finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция \+\_\+start,которая отвечает за конец движения .Например\+:выключение двигателя(турбин), опущение якоря. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает номер дочернего класса. Для car-\/1,ship-\/2,airplane-\/3,space\+\_\+palne-\/4,motocycle-\/1 так как она наследует функцию start и finish от car
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classspace__plane_a8a29e0134aaece52a8f3efb99a866485}{space\+\_\+plane}}, \mbox{\hyperlink{classship_a3b5ae74f037a2c595c82bac894bf01bc}{ship}}, and \mbox{\hyperlink{classcar_a70cc58cbc405478900243d9fda172b72}{car}}.
+
+\mbox{\Hypertarget{classvechile_a6087862dfe0154a33f80cbc209145a88}\label{classvechile_a6087862dfe0154a33f80cbc209145a88}} 
+\index{vechile@{vechile}!\_move@{\_move}}
+\index{\_move@{\_move}!vechile@{vechile}}
+\doxysubsubsection{\texorpdfstring{\_move()}{\_move()}}
+{\footnotesize\ttfamily virtual void vechile\+::\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Функция \+\_\+move описывает движение нашего тс т.\+е. что нужно сделать чтобы мы смогли продолжить движение. 
+
+
+
+Implemented in \mbox{\hyperlink{classship_af149a44a47c311dda39d7054c0346ce1}{ship}}, and \mbox{\hyperlink{classcar_a2827d44da5d4bb238b21bf69ae7d53ca}{car}}.
+
+\mbox{\Hypertarget{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}\label{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}} 
+\index{vechile@{vechile}!\_start@{\_start}}
+\index{\_start@{\_start}!vechile@{vechile}}
+\doxysubsubsection{\texorpdfstring{\_start()}{\_start()}}
+{\footnotesize\ttfamily virtual int vechile\+::\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Функция \+\_\+start,которая отвечает за начало движения .Например\+:включение двигателя(турбин), поднятие якоря. 
+
+\begin{DoxyReturn}{Returns}
+Возвращает номер дочернего класса. Для car-\/1,ship-\/2,airplane-\/3,space\+\_\+palne-\/4,motocycle-\/1 так как она наследует функцию start и finish от car
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classspace__plane_a56fe4919a5fc7ad98bddb1d896da0170}{space\+\_\+plane}}, \mbox{\hyperlink{classship_a38680665771adfa13b7a1a65d907116d}{ship}}, and \mbox{\hyperlink{classcar_a61fc40888275a71e38efc3008b5d0edb}{car}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_header_8h}{Header.\+h}}\end{DoxyCompactItemize}

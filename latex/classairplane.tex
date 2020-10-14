@@ -1,0 +1,54 @@
+\hypertarget{classairplane}{}\doxysection{airplane Class Reference}
+\label{classairplane}\index{airplane@{airplane}}
+
+
+Дочерний класс airplane.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+Inheritance diagram for airplane\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classairplane}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classairplane_a2f386168ab7cc5651fd9d33568000f28}{\+\_\+fly}} ()
+\begin{DoxyCompactList}\small\item\em Функция описывает взлет самолета (его разгон убирание шасси и т.\+д.) Функция является виртуальной для последующей перезагрузки данной функции в дочернем классе. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classairplane_ad02acafe6e334f589e0f2d9cba6b88c8}\label{classairplane_ad02acafe6e334f589e0f2d9cba6b88c8}} 
+{\bfseries airplane} (int max\+\_\+speed)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Дочерний класс airplane. 
+
+Данный класс является дочерним классом класса vechile.\+Класс был получен через private наследование,так как нужно было чтобы наши виртуальные методы были недоступны в любой точке кода и не передовались классам дочерним от этого класса. В нем хранятся\+: В private\+: 
+\begin{DoxyParams}{Parameters}
+{\em bool} & chassis--состояние шасси; true--если шасси выпущены ,false--если шасси спрятаны. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classairplane_a2f386168ab7cc5651fd9d33568000f28}\label{classairplane_a2f386168ab7cc5651fd9d33568000f28}} 
+\index{airplane@{airplane}!\_fly@{\_fly}}
+\index{\_fly@{\_fly}!airplane@{airplane}}
+\doxysubsubsection{\texorpdfstring{\_fly()}{\_fly()}}
+{\footnotesize\ttfamily void airplane\+::\+\_\+fly (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция описывает взлет самолета (его разгон убирание шасси и т.\+д.) Функция является виртуальной для последующей перезагрузки данной функции в дочернем классе. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{airplane___functions_8cpp}{airplane\+\_\+\+Functions.\+cpp}}\end{DoxyCompactItemize}

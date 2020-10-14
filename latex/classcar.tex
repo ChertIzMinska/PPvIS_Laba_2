@@ -1,0 +1,176 @@
+\hypertarget{classcar}{}\doxysection{car Class Reference}
+\label{classcar}\index{car@{car}}
+
+
+Дочерний класс car.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+Inheritance diagram for car\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcar}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcar_a6d2d39d76918233f207f45f43e737f33}{\+\_\+change\+\_\+a\+\_\+transmission}} (int transmission)
+\begin{DoxyCompactList}\small\item\em Функция описывает переключение передач. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcar_a61fc40888275a71e38efc3008b5d0edb}{\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Описывает то , как надо начать движение(завести машигу). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcar_ab41a88b940fbb99f2f0592db5558ef21}{\+\_\+use\+\_\+accelarate\+\_\+pedal}} ()
+\begin{DoxyCompactList}\small\item\em Функция которая просто описывает педаль газа т.\+е. ускорение или же добавление скорости \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classcar_a1815d3f63c278bc8e3b2cdef7f7d63a1}{\+\_\+use\+\_\+brake\+\_\+pedal}} ()
+\begin{DoxyCompactList}\small\item\em Функция описывает педаль торможение(снижение скорости) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcar_a70cc58cbc405478900243d9fda172b72}{\+\_\+finish}} ()
+\begin{DoxyCompactList}\small\item\em Функция описывает остановку машины и выключение двигателя \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classcar_a765c82d04d88f7430ea4d38119cb6637}\label{classcar_a765c82d04d88f7430ea4d38119cb6637}} 
+{\bfseries car} (string mark, string number, int light\+\_\+transmission, int max\+\_\+speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classcar_a0ef426902db4d8e847d672262e58c193}{\+\_\+activate\+\_\+stop\+\_\+signals}} ()
+\begin{DoxyCompactList}\small\item\em Функция отвчает за включение стоп-\/сигналов при торможении. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcar_a2827d44da5d4bb238b21bf69ae7d53ca}{\+\_\+move}} ()
+\begin{DoxyCompactList}\small\item\em Описывает действия ,которые нужно для передвижения. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcar_a052a2007f9fee3c1defd1bf61061fc1e}\label{classcar_a052a2007f9fee3c1defd1bf61061fc1e}} 
+string {\bfseries mark}
+\item 
+\mbox{\Hypertarget{classcar_a08539ddfee0155ea7cfae058b9c595e5}\label{classcar_a08539ddfee0155ea7cfae058b9c595e5}} 
+string {\bfseries number}
+\item 
+\mbox{\Hypertarget{classcar_a29195967032aefdbac50e6ba4405973a}\label{classcar_a29195967032aefdbac50e6ba4405973a}} 
+int {\bfseries transmission} =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Дочерний класс car. 
+
+Данный класс был получен через public наследование , так как нам не нужно было менять типы доступа наших функций и атрибутов абстрактоного класса. 
+\begin{DoxyParams}{Parameters}
+{\em int} & light transmission светопропускаемость наших стекол,находится в private секции. Все следующие параметры находятся в protected , так как нужно было чтобы эти атрибуты передавались нашим дочерним классам и при этом нельзя было просто так их изменить. \\
+\hline
+{\em string} & mark -- марка/модель машины(мотоцикла для дочернего класса) \\
+\hline
+{\em string} & number--номера нашей машины(мотоцикла) \\
+\hline
+{\em int} & transmission--трансмиссия на данный момент(на какой передаче находится наша тс) \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcar_a0ef426902db4d8e847d672262e58c193}\label{classcar_a0ef426902db4d8e847d672262e58c193}} 
+\index{car@{car}!\_activate\_stop\_signals@{\_activate\_stop\_signals}}
+\index{\_activate\_stop\_signals@{\_activate\_stop\_signals}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_activate\_stop\_signals()}{\_activate\_stop\_signals()}}
+{\footnotesize\ttfamily void car\+::\+\_\+activate\+\_\+stop\+\_\+signals (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Функция отвчает за включение стоп-\/сигналов при торможении. 
+
+\mbox{\Hypertarget{classcar_a6d2d39d76918233f207f45f43e737f33}\label{classcar_a6d2d39d76918233f207f45f43e737f33}} 
+\index{car@{car}!\_change\_a\_transmission@{\_change\_a\_transmission}}
+\index{\_change\_a\_transmission@{\_change\_a\_transmission}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_change\_a\_transmission()}{\_change\_a\_transmission()}}
+{\footnotesize\ttfamily void car\+::\+\_\+change\+\_\+a\+\_\+transmission (\begin{DoxyParamCaption}\item[{int}]{transmission }\end{DoxyParamCaption})}
+
+
+
+Функция описывает переключение передач. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transmission} & Параметр указывает какую передачу мы хотим включить\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcar_a70cc58cbc405478900243d9fda172b72}\label{classcar_a70cc58cbc405478900243d9fda172b72}} 
+\index{car@{car}!\_finish@{\_finish}}
+\index{\_finish@{\_finish}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_finish()}{\_finish()}}
+{\footnotesize\ttfamily int car\+::\+\_\+finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция описывает остановку машины и выключение двигателя 
+
+\begin{DoxyReturn}{Returns}
+возвращает 1
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_ad5e919ab1cab97025692cd9b8ee90680}{vechile}}.
+
+\mbox{\Hypertarget{classcar_a2827d44da5d4bb238b21bf69ae7d53ca}\label{classcar_a2827d44da5d4bb238b21bf69ae7d53ca}} 
+\index{car@{car}!\_move@{\_move}}
+\index{\_move@{\_move}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_move()}{\_move()}}
+{\footnotesize\ttfamily void car\+::\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Описывает действия ,которые нужно для передвижения. 
+
+
+
+Implements \mbox{\hyperlink{classvechile_a6087862dfe0154a33f80cbc209145a88}{vechile}}.
+
+\mbox{\Hypertarget{classcar_a61fc40888275a71e38efc3008b5d0edb}\label{classcar_a61fc40888275a71e38efc3008b5d0edb}} 
+\index{car@{car}!\_start@{\_start}}
+\index{\_start@{\_start}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_start()}{\_start()}}
+{\footnotesize\ttfamily int car\+::\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Описывает то , как надо начать движение(завести машигу). 
+
+\begin{DoxyReturn}{Returns}
+возвращает 1
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}{vechile}}.
+
+\mbox{\Hypertarget{classcar_ab41a88b940fbb99f2f0592db5558ef21}\label{classcar_ab41a88b940fbb99f2f0592db5558ef21}} 
+\index{car@{car}!\_use\_accelarate\_pedal@{\_use\_accelarate\_pedal}}
+\index{\_use\_accelarate\_pedal@{\_use\_accelarate\_pedal}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_use\_accelarate\_pedal()}{\_use\_accelarate\_pedal()}}
+{\footnotesize\ttfamily bool car\+::\+\_\+use\+\_\+accelarate\+\_\+pedal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция которая просто описывает педаль газа т.\+е. ускорение или же добавление скорости 
+
+\begin{DoxyReturn}{Returns}
+true--возращает если машина уже заведена и машина ускорилась;false-- возращает если педаль ничего не сделала
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcar_a1815d3f63c278bc8e3b2cdef7f7d63a1}\label{classcar_a1815d3f63c278bc8e3b2cdef7f7d63a1}} 
+\index{car@{car}!\_use\_brake\_pedal@{\_use\_brake\_pedal}}
+\index{\_use\_brake\_pedal@{\_use\_brake\_pedal}!car@{car}}
+\doxysubsubsection{\texorpdfstring{\_use\_brake\_pedal()}{\_use\_brake\_pedal()}}
+{\footnotesize\ttfamily bool car\+::\+\_\+use\+\_\+brake\+\_\+pedal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция описывает педаль торможение(снижение скорости) 
+
+\begin{DoxyReturn}{Returns}
+true--возращает если машина уже заведена и машина замедлилась;false-- возращает если педаль ничего не сделала
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_car___functions_8cpp}{Car\+\_\+\+Functions.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{classship}{}\doxysection{ship Class Reference}
+\label{classship}\index{ship@{ship}}
+
+
+Дочерний класс ship.  
+
+
+
+
+{\ttfamily \#include $<$Header.\+h$>$}
+
+Inheritance diagram for ship\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classship}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classship_aa6fdea8b06006ae34a08b613cc914456}{\+\_\+use\+\_\+anchor}} ()
+\begin{DoxyCompactList}\small\item\em Функция ,которая отвечате за поднятие якоря ,если он опущен, и если якорь поднят , то за опуск якоря. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classship_a38680665771adfa13b7a1a65d907116d}{\+\_\+start}} ()
+\begin{DoxyCompactList}\small\item\em Функция ,которая отвечат за начало движение(т.\+е. опущение якоря и разгон двигателя) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classship_a3b5ae74f037a2c595c82bac894bf01bc}{\+\_\+finish}} ()
+\begin{DoxyCompactList}\small\item\em Функция , которая отвечает за остановку корабля(опуск якоря). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classship_a8598ba3c372ad0ae42e0adc34588390b}\label{classship_a8598ba3c372ad0ae42e0adc34588390b}} 
+{\bfseries ship} (int displacement, int max\+\_\+speed)
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classship_af149a44a47c311dda39d7054c0346ce1}{\+\_\+move}} ()
+\begin{DoxyCompactList}\small\item\em Функция описывает движение корабля (разгон корабля при подаче топлива). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Дочерний класс ship. 
+
+Данный класс был получен через public наследование , так как нам не нужно было менять типы доступа наших функций и атрибутов абстрактоного класса. В нем хранятся\+: В private\+: 
+\begin{DoxyParams}{Parameters}
+{\em int} & displacement-- Водоизмещение (количество (обычно вес) воды, вытесняемой плавающим судном). \\
+\hline
+{\em bool} & down\+\_\+anchor-- состояние якоря нашего корабля;true--первоначальное состояние т.\+е. якорь опущен, false--якорь поднят. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classship_a3b5ae74f037a2c595c82bac894bf01bc}\label{classship_a3b5ae74f037a2c595c82bac894bf01bc}} 
+\index{ship@{ship}!\_finish@{\_finish}}
+\index{\_finish@{\_finish}!ship@{ship}}
+\doxysubsubsection{\texorpdfstring{\_finish()}{\_finish()}}
+{\footnotesize\ttfamily int ship\+::\+\_\+finish (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция , которая отвечает за остановку корабля(опуск якоря). 
+
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_ad5e919ab1cab97025692cd9b8ee90680}{vechile}}.
+
+\mbox{\Hypertarget{classship_af149a44a47c311dda39d7054c0346ce1}\label{classship_af149a44a47c311dda39d7054c0346ce1}} 
+\index{ship@{ship}!\_move@{\_move}}
+\index{\_move@{\_move}!ship@{ship}}
+\doxysubsubsection{\texorpdfstring{\_move()}{\_move()}}
+{\footnotesize\ttfamily void ship\+::\+\_\+move (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+Функция описывает движение корабля (разгон корабля при подаче топлива). 
+
+
+
+Implements \mbox{\hyperlink{classvechile_a6087862dfe0154a33f80cbc209145a88}{vechile}}.
+
+\mbox{\Hypertarget{classship_a38680665771adfa13b7a1a65d907116d}\label{classship_a38680665771adfa13b7a1a65d907116d}} 
+\index{ship@{ship}!\_start@{\_start}}
+\index{\_start@{\_start}!ship@{ship}}
+\doxysubsubsection{\texorpdfstring{\_start()}{\_start()}}
+{\footnotesize\ttfamily int ship\+::\+\_\+start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Функция ,которая отвечат за начало движение(т.\+е. опущение якоря и разгон двигателя) 
+
+\begin{DoxyReturn}{Returns}
+возрвращает 2
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classvechile_a8431686a1dbbb4390eb0cad4aa669b67}{vechile}}.
+
+\mbox{\Hypertarget{classship_aa6fdea8b06006ae34a08b613cc914456}\label{classship_aa6fdea8b06006ae34a08b613cc914456}} 
+\index{ship@{ship}!\_use\_anchor@{\_use\_anchor}}
+\index{\_use\_anchor@{\_use\_anchor}!ship@{ship}}
+\doxysubsubsection{\texorpdfstring{\_use\_anchor()}{\_use\_anchor()}}
+{\footnotesize\ttfamily void ship\+::\+\_\+use\+\_\+anchor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Функция ,которая отвечате за поднятие якоря ,если он опущен, и если якорь поднят , то за опуск якоря. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_header_8h}{Header.\+h}}\item 
+P\+Pv\+I\+S/\mbox{\hyperlink{_ship___functions_8cpp}{Ship\+\_\+\+Functions.\+cpp}}\end{DoxyCompactItemize}
